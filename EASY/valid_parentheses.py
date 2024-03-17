@@ -22,7 +22,7 @@ def is_valid(string: str):
         # meaning open parentheses came
         if num > 0:
             stack.append(num)
-        # close parentheses came before a open parentheses or wrong close came
+        # close parentheses came before an open parentheses or wrong close came
         elif len(stack) == 0 or stack[-1] + num != 0:
             return False
         # parentheses close
